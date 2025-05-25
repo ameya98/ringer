@@ -333,7 +333,7 @@ def train_from_config(
         False, help="Don't check data filenames and cache hashes before loading data"
     ),
     profile: bool = False,
-    overwrite: bool = typer.Option(False, help="Overwrite output directory"),
+    overwrite: bool = typer.Option(True, help="Overwrite output directory"),
 ) -> None:
     curr_time = datetime.now().strftime("%y%m%d_%H%M%S")
     logging.basicConfig(

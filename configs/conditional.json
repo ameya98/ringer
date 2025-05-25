@@ -1,5 +1,6 @@
 {
-    "data_dir": "cremp/train",
+    "data_dir": "/data/bucket/kleinhej/cremp-preprocessed-ringer/train",
+    "overwrite": true,
     "split_sizes": [0.9, 0.1, 0.0],
     "internal_coordinates_definitions": "angles-sidechains",
     "use_atom_features": true,
@@ -30,5 +31,5 @@
     "warmup_epochs": 10,
     "early_stop_patience": 0,
     "use_swa": false,
-    "batch_size": 8192
+    "batch_size": 64
 }
